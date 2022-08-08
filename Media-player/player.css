@@ -1,0 +1,217 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: sans-serif;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-image: url(media/namroud-gorguis-FZWivbri0Xk-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.navBar{
+    width: 100%;
+    border-color: black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navBar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.main{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main button{
+    padding: 10px 12px;
+    margin: 0px 10px;
+}
+
+.left{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.right{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    margin-left: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.image{
+    height: 300px;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px 12px rgb(240,240,240,0.2) ;
+    margin-bottom: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 45%;
+    height: 5px;
+    outline: none;
+    margin: 0px 15px;
+    background: #000;
+    cursor: pointer;
+    
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:20px;
+    height: 20px;
+    background: #997950;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.left .volume{
+    position: absolute;
+    bottom: 28%;
+    left: 0%;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color: #000;
+}
+
+.left .volume .p{
+    font-size: 15px;
+}
+
+.left .volume .img{
+    cursor: pointer;
+}
+
+.volume #volume_show{
+    padding: 10px 12px;
+    margin: 0px 5px 0px 0px;
+    background: rgb(245,245,245,0.2);
+}
+
+.right .player{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .player button{
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+.right #title{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: #997950;
+    font-size: 35px;
+}
+
+.right #movie{
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: #997950;
+    font-size: 20px;
+}
+
+.right .duration{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20px;
+    margin-top: 40px;
+}
+
+.right #auto{
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 45px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: rgb(245,245,245,0.2);
+
+}
+
+.right .show_song_no{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    border-radius: 15px;
+    background: rgb(245,245,245,0.2);
+}
+
+.right .show_song_no p:nth-child(2){
+    margin: 0px 5px;
+}

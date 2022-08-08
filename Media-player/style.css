@@ -1,0 +1,118 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: sans-serif;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-image: url(media/namroud-gorguis-FZWivbri0Xk-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.navBar{
+    width: 100%;
+    border-color: black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.navBar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 32%;
+    background-color: none;
+}
+
+.left_content{
+    margin-left: 5%;
+}
+
+.left_content h1{
+    color: black;
+    font-size: 90px;
+    line-height: 110px;
+    float: left;
+    text-align: right;
+}
+
+.left_content h1 list{
+    color: white;
+}
+
+.middle_content{
+
+    margin-left: 45%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.song_title{
+    font-size: 25px;
+    font-weight: 700px;
+    color: black;
+}
+
+.right_content{
+
+    margin-left: 13%;
+    align-items: center;
+    display: flex;
+    margin-top: 350px;
+}
+
+.right_content p{
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    
+}
+
+.list{
+    color: #997950;
+}
+
+#play{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.main{
+    width: 100%;
+    margin: auto;
+    background-image: url(media/namroud-gorguis-FZWivbri0Xk-unsplash.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

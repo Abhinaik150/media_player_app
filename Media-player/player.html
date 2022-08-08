@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem</title>
+    <link rel="stylesheet" href="player.css">
+
+</head>
+<body>
+    <div class="container">
+                <div class="navBar">
+                    <img src="media/logo.png" alt="logo" class="logo">
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="problem.html">PLAYER</a></li>
+                        <li><a href="Player.html">PROBLEM</a></li>
+                        <li><a href="#">LIST</a></li>
+                        <li><a href="#">PROFILE</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <div class="left">  
+                        <div class="image">
+                            <img id="track_image">
+                        </div>
+                        <div class="volume">
+                            <p id="volume_show">90</p>
+                            <img src="media/volume.png" id="volume_icon" onclick="mute_sound()" alt="volume">
+                            <input type="range" min="0" max="100" value="90" id="volume" onchange="volume_change()">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="show_song_no">
+                            <p id="present">1</p> <p>/</p> <p id="total">5</p>
+                        </div>    
+                        <p id="title"><b>TITLE</b></p>
+                        <p id="movie"><b>MOVIE</b></p>
+                        <div class="player">
+                            <button id="pre" onclick="previous_song()"><img src="media/backward.png" alt="backward"></button>
+                            <button id="play" onclick="justPlay()"><img src="media/play_player.png" id="sing" alt="backward"></button>
+                            <button id="next" onclick="next_song()"><img src="media/forward.png" alt="backward"></button>
+                        </div>
+                        <div class="duration">
+                            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="duration_slider()">
+                        </div>
+                        <button id="auto" onclick="autoplay_switch()">auto play</button>
+                    </div>
+                </div>
+    </div>
+
+    <script src="player.js"></script>
+</body>
+</html>
+
