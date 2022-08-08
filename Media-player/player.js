@@ -43,15 +43,15 @@ let All_song = [
     },
 
     {
-        name : "fan04",
-        movie : "FAN",
+        name : "Naina Da Kya Kasoor",
+        movie : "Andhadhun",
         img : "media/img/004_ku.jpg",
         path : "media/songs/004_ka.mp3"
     },
 
     {
-        name : "fan05",
-        movie : "FAN",
+        name : "darshana",
+        movie : "Hridayam",
         img : "media/img/005_dr.jpg",
         path : "media/songs/005_hr.mp3"
     },
